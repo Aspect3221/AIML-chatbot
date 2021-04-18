@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS * *</pattern>
+      <template>hello <star index = "1"/> <star index = "2"/>. How are you doing today?</template>
+  </category>
+</aiml>
