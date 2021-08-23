@@ -1,12 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>WHERE IS BRISTOL</pattern>
+    <template>In the South-West of the U.K.</template>
   </category>
   
   <category>
-      <pattern>MY NAME IS * *</pattern>
-      <template>hello <star index = "1"/> <star index = "2"/>. How are you doing today?</template>
+      <pattern>WHERE IS LONDON</pattern>
+      <template>Roughly half-way between Hatfield and Severnoaks</template>
   </category>
+  
+  <category>
+      <pattern>WHERE IS BATH</pattern>
+      <template>In Somerset</template>
+  </category>
+  
+  <category>
+      <pattern>WHERE IS UWE</pattern>
+      <template>In north Bristol</template>
+  </category>
+  
+  <category>
+      <pattern>WHERE IS BEAUTY</pattern>
+      <template>In the eye of the beholder</template>
+  </category>
+  
+  <category>
+      <pattern>WHEREABOUTS IS *</pattern>
+      <template><srai>WHERE IS <star/></srai></template>
+  </category>
+  
+  
+  <category>
+      <pattern>* BRISTOL *</pattern>
+      <template>In the South-West of the U.K.</template>
+  </category>
+  
+  <category>
+      <pattern>* LONDON *</pattern>
+      <template>Roughly half-way between Hatfield and Severnoaks</template>
+  </category>
+  
+  <category>
+      <pattern>* BATH *</pattern>
+      <template>In Somerset</template>
+  </category>
+  
+  <category>
+      <pattern>* UWE *</pattern>
+      <template>In north Bristol</template>
+  </category>
+  
+  <category>
+      <pattern>* BEAUTY *</pattern>
+      <template>In the eye of the beholder</template>
+  </category>
+  
+  <category>
+      <pattern>WHERE IS KEYNSHAM</pattern>
+      <template>I do not know where Keynsham is</template>
+  </category>
+  
+  <category>
+      <pattern>WHY NOT</pattern>
+      <that>I DO NOT KNOW WHERE KEYNSHAM IS</that>
+      <template>Because i do not have a category to connect me to a mapping service</template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS BEAUTY</pattern>
+      <template>A subjective judgment evoked by an emotional response</template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS THE POPULATION OF *</pattern>
+      <template>
+          <think><set name ="state"><star/></set></think>
+          
+          <condition name = "state" value = "Bristol">The population of Bristol is about 430000</condition>
+          <condition name = "state" value = "London">The population of London is about 8.6 million</condition>
+          <condition name = "state" value = "Bath">The population of Bath is about 84000</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>HOW MANY PEOPLE LIVE IN *</pattern>
+      <template>
+          <think><set name = "state"><star/></set></think>
+          
+          <condition name = "state" value = "Bristol">The population of Bristol is about 430000</condition>
+          <condition name = "state" value = "Bath">The population of Bath is about 84000</condition>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS BRISTOL</pattern>
+      <template>Bristol is a city.</template>
+  </category>
+  
+  <category>
+      <pattern>WHERE IS IT</pattern>
+      <that>BRISTOL IS A CITY</that>
+      <template>In the South-West of the U.K.</template>
+  </category>
+  
+  <category>
+      <pattern>WHAT IS LONDON</pattern>
+      <template>London is a city.</template>
+  </category>
+  
+  <category>
+       <pattern>WHERE IS IT</pattern>
+      <that>LONDON IS A CITY</that>
+      <template>Roughly half-way between Hatfield and Severnoaks</template>
+  </category>
+  
+  <category>
+      <pattern>HOW MANY PEOPLE LIVE IN KEYNSHAM</pattern>
+      <template>I do not know what the population of keynsham is</template>
+  </category>
+  
+  <category>
+      <pattern>WHY NOT</pattern>
+      <that>I DO NOT KNOW WHAT THE POPULATION OF KEYNSHAM IS</that>
+      <template>Because it is too hard to count the residents of Keynsham</template>
+  </category>
+  
+  <category>
+      <pattern>HOW MANY PEOPLE LIVE IN SPACE</pattern>
+      <template>I do not know what the population of space is</template>
+  </category>
+  
+  <category>
+      <pattern>WHY NOT</pattern>
+      <that>I DO NOT KNOW WHAT THE POPULATION OF SPACE IS</that>
+      <template>Because it is too hard to count the residents of space</template>
+  </category>
+  
+  <category>
+      <pattern>IS BATH IN BRISTOL</pattern>
+      <template>I do not have an answer for that</template>
+  </category>
+  
+  <category>
+      <pattern>*</pattern>
+      <template>I do not have an answer for that</template>
+  </category>
+
 </aiml>
